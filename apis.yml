@@ -1,8 +1,25 @@
 aid: avimedical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/avimedical.png
 name: avimedical
-description: avimedical is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Avi Medical is a technology-enabled primary care provider headquartered in Munich, Germany,
+  operating a network of modern general-practice (Hausarzt) medical practices paired with a
+  patient-facing mobile app for booking appointments, video consultations, prescriptions, and
+  digital access to medical records. The company combines physical clinics with digital health
+  tooling to modernize German primary care, and is backed by Balderton Capital among other
+  investors. This API Evangelist profile tracks the company; no public developer API, OpenAPI
+  definition, or developer portal has been found on its public surface as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/avimedical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Health
+- Primary Care
+- Digital Health
+- Medical Practice
+- Germany
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/avimedical-domain-security.yml
 - type: Website
   url: https://avimedical.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
